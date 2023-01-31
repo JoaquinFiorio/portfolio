@@ -103,7 +103,7 @@ SECTION 1*/
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: url("../img/carretera-en-otono.jpg") center center no-repeat fixed;
+    background: url("../img/carretera-en-otono.jpg") center center no-repeat;
 }
 
 svg{
