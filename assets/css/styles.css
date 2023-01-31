@@ -1,14 +1,17 @@
 html {
     overflow-y: scroll;
-    overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
 
-  *,
-  *:before,
-  *:after {
+body{
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
@@ -164,8 +167,6 @@ SECTION 2*/
     width: 100%;
     height: max-content;
     background-color: #101010;
-    
-    overflow: hidden;
 }
 
 .conteiner{
