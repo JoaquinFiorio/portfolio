@@ -1,0 +1,542 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+  *,
+  *:before,
+  *:after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: rgb(41, 40, 40);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: rgb(216, 73, 21);
+}
+
+/*
+NAV BAR
+*/
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    padding: 40px;
+    position: fixed;
+    transition: all 0.7s;
+}
+
+.menuFixed{
+    background-color: #1b1b1b;
+    z-index: 99;
+    padding: 20px 40px;
+    transition: all 0.7s;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul a{
+    margin: 0px 15px;
+    list-style: none;
+    color: whitesmoke;
+    transition: all 0.3s;
+}
+
+nav ul a:hover{
+    color: rgb(216, 73, 21);
+    transition: all  0.3s;
+}
+
+.botonContacto{
+    padding: 7.5px 15px;
+    border: 2px solid rgb(216, 73, 21);
+    border-radius: 5px;
+    color:  rgb(216, 73, 21);
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+
+.botonContacto:hover{
+    background-color: rgb(216, 73, 21);
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+/*
+SECTION 1*/
+
+.sectionName{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: url("../img/carretera-en-otono.jpg") center center no-repeat fixed;
+}
+
+svg{
+    color: rgb(255, 255, 255);
+}
+
+.contenedor{    
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{    
+    margin-top: 100px;
+}
+
+.name h1{
+    font-size: 50px;
+    color: rgb(216, 73, 21);
+}
+
+.name h3{
+    margin: 10px 0 30px 0 ;
+    color: whitesmoke;
+}
+
+.contenedorIconos{
+    display: flex;
+    margin:50px auto;
+}
+
+.circle{
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(216, 73, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+svg{    
+    transition: all 0.3s;
+}
+
+.circle svg:hover{
+    color: rgb(216, 73, 21);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/*
+SECTION 2*/
+
+.about{
+    width: 100%;
+    height: max-content;
+    background-color: #101010;
+    
+    overflow: hidden;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10%;
+}
+
+.profileImg{
+    width: 100%;
+    margin-right:7%;
+}
+
+.profileImg img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.title{
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+
+span{
+
+    font-size: 40px;
+    color:rgb(216, 73, 21);
+}
+
+.p2{
+    margin-top: 10px;
+}
+
+.aboutMe{
+    border: 2px solid rgb(216, 73, 21);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px ;  
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personalData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.download{
+    margin-top: 20px;
+}
+
+.cv{
+    padding: 7.5px 15px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: rgb(216, 73, 21);
+    border: 2px solid rgb(216, 73, 21);
+    transition: all 0.5s;
+}
+
+.cv:hover{
+    background-color: transparent; 
+    color: rgb(216, 73, 21);  
+}
+
+.cv svg{
+    margin-bottom: -3px;
+}
+
+h5{
+    margin-bottom: 5px;
+    color: rgb(216, 73, 21);
+}
+
+/*
+SECTION 3*/
+
+.proyects{
+    width: 100%;
+    height: max-content;
+    background-color: #181818;
+    color: whitesmoke;
+}
+
+.conteinerProyecto{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 10%;
+}
+
+.titleProyecto{
+    display: flex;
+}
+
+.titleProyecto span{
+    margin-top: -10px;
+    margin-right: 5px;
+}
+
+.allProyects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.actualProyects{
+    display: flex;
+    border: 2px solid rgb(216, 73, 21);
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    margin-right: 2%;
+    transition: all 0.3s;
+}
+
+.actualProyects:hover{
+    background-color: #1010109f;
+    transition: all 0.3s;
+}
+
+.actualProyects svg{
+    color:rgb(216, 73, 21);
+}
+
+.description{
+    margin: 25px 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/*
+SECTION 4*/
+
+.tecnologies{
+    width: 100%;
+    background-color: #101010;
+    color: whitesmoke;
+}
+
+.titleTech{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.lenguages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.types{
+    width: 130px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.types::after{
+    display: block;
+    height: 2px;
+    width:100%;
+    content: "";
+    margin-top: 10px;
+    background: rgb(216, 73, 21);
+}
+
+.types:hover{
+    background: #181818;
+    cursor: default;
+}
+
+.courses{
+    width: 100%;
+    background-color: #181818;
+    color: whitesmoke;
+}
+
+.myCourses{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.linkedin{
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.linkedin img{
+    max-width: 25px;
+}
+
+.conteinerCourse{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 20px;
+    background-color: #10101081;
+    border-radius: 5px;
+}
+
+.conteinerLink3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.conteinerLink{ 
+    transition: all 0.3s;
+}
+
+.conteinerLink:hover{
+    margin-top: -6px;
+    transition: all 0.3s;
+}
+
+.conteinerCourse h5{
+    color: whitesmoke;
+}
+
+
+.conteinerCourse h4{
+    color: rgb(216, 73, 21);
+    margin-bottom: 10px;
+}
+
+/*
+SECTION 5
+*/
+
+.contactMe{
+    width: 100%;
+    background-color: #101010;
+    color: whitesmoke;
+}
+
+.contactMe a{
+    color: whitesmoke;
+}
+
+.contactWe{
+    gap: 15px;
+}
+
+.contactWe svg{
+    color: rgb(216, 73, 21);
+}
+
+.contactW{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border: 2px solid rgb(216, 73, 21);
+    border-radius: 7px;
+    gap: 10px;
+    transition: all 0.4s;
+}
+
+.contactW:hover{
+    background-color: #1818189d;
+    transition: all 0.4s;
+}
+
+/*
+FOOTER*/
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+}
+.conteinerFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10% 50px 10%;
+}
+
+.conteinerFooter h2{
+    color: rgb(216, 73, 21);
+    margin-bottom: 10px;
+}
+
+.conteinerFooter h5{
+    color:whitesmoke
+}
+
+
+/*
+SWIPERJS
+*/
+
+
+/*
+RESPONSIVE
+*/
+
+@media (max-width:935px){
+    .aboutMe{
+        flex-direction: column;
+    }
+    .allProyects{
+        flex-direction: column;
+    }
+    .actualProyects{
+        margin-top: 20px;
+    }
+    .conteinerLink3{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:680px){
+    header nav{
+        display: none;
+    }
+    .contactWe{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px){
+    .conteiner{
+        flex-direction: column;
+    }
+    .row{
+        margin-top: 50px;
+    }
+    .profileImg img{
+        width: 300px;
+    }
+}
+
